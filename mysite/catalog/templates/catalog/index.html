@@ -1,0 +1,14 @@
+{% extends "catalog/base_generic.html" %}
+
+{% block content %}
+    <h1>온라인 도서관 홈페이지</h1>
+    <p>온라인 도서관에 오신것을 환영합니다! 멋쟁이 사자처럼 화이팅!</p>
+    <h2>컨텐츠</h2>
+    <p>이 도서관은 다음과 같은 레코드를 가지고 있습니다:</p>
+    <ul>
+        <li><strong>책: </strong>{{ num_books }}</li>
+        <li><strong>개인 책: </strong>{{ num_instances }}</li>
+        <li><strong>유효한 책: </strong>{{ num_instances_available }}</li>
+        <li><strong>작가: </strong>{{ num_authors }}</li>
+    </ul>
+{% endblock %}
